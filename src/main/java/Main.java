@@ -14,7 +14,7 @@ public class Main {
         int testNumber = 30;
         int[] ns = new int[]{5,10,20,50,100};
         Class<AbstractPhilosopher>[] philosopherClasses = new Class[]
-                {Philosopher2.class, Philosopher3.class, Philosopher4.class, Philosopher5.class, Philosopher6.class};
+                { Philosopher4.class};
         for(int i = 0; i<philosopherClasses.length; i++) {
             Constructor<AbstractPhilosopher> c = philosopherClasses[i].getConstructor(Fork[].class,int.class,int.class);
             for(int j=0;j<ns.length;j++){
